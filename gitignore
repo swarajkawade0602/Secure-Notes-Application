@@ -1,0 +1,91 @@
+# ============================
+#   GLOBAL SECURITY GITIGNORE
+# ============================
+
+# ============================
+# 1. Ignore Sensitive Spring Boot Config
+# ============================
+src/main/resources/application.properties
+src/main/resources/application.yml
+
+# Allow safe example file
+!src/main/resources/application-example.properties
+
+# ============================
+# 2. Java / Maven
+# ============================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# ============================
+# 3. Spring Boot Logs
+# ============================
+logs/
+*.log
+*.pid
+*.gz
+
+# ============================
+# 4. React / Vite Frontend
+# ============================
+Secure Notes Frontend/node_modules/
+Secure Notes Frontend/dist/
+Secure Notes Frontend/.vite/
+
+# Environment variables
+Secure Notes Frontend/.env
+Secure Notes Frontend/.env.local
+Secure Notes Frontend/.env.*.local
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ============================
+# 5. Node Modules (global safety)
+# ============================
+node_modules/
+
+# ============================
+# 6. Editors / IDEs
+# ============================
+.vscode/
+*.code-workspace
+.history/
+
+# ============================
+# 7. OS Files
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# 8. Misc
+# ============================
+*.swp
+*.swo
+*.bak
+*.tmp
